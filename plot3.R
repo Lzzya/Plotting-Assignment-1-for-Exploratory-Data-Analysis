@@ -8,6 +8,7 @@ mydata1$Sub_metering_2 <- as.numeric(mydata1$Sub_metering_2)
 mydata1$Voltage <- as.numeric(mydata1$Voltage)
 mydata1$Global_reactive_power <- as.numeric(mydata1$Global_reactive_power)
 
+png("plot2.png")
 plot(mydata1$Time, mydata1$Sub_metering_1, 
      type="l",
      xlab = "",
@@ -21,3 +22,4 @@ legend("topright",
        col = c("black","red","blue")
        )
 #3多条线图
+dev.off()
