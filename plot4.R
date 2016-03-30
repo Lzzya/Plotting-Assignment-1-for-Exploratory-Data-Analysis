@@ -8,6 +8,7 @@ mydata1$Sub_metering_2 <- as.numeric(mydata1$Sub_metering_2)
 mydata1$Voltage <- as.numeric(mydata1$Voltage)
 mydata1$Global_reactive_power <- as.numeric(mydata1$Global_reactive_power)
 
+png("plot2.png")
 par(mfrow=c(2,2))
 plot(mydata1$Time, mydata1$Global_active_power, 
      type="l",
@@ -43,3 +44,4 @@ plot(mydata1$Time, mydata1$Global_reactive_power,
      xlab = "datetime",
      ylab = "Global_reactive_power"
 )
+dev.off()
