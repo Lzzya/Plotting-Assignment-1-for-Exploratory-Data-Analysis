@@ -1,2 +1,2 @@
-# Plotting-Assignment-1-for-Exploratory-Data-Analysis
+# Coursera_DetaScience_Assignments_ExploratoryDataAnalysis
 Plotting assignment 1.
